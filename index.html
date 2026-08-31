@@ -12,10 +12,10 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-        <ul class="menu-list">
-          <li class="menu-item menu-item_active">главная</li>
-          <li class="menu-item">посмотреть лоты</li>
-          <li class="menu-item">об аукционе</li>
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit">главная</li>
+          <li class="header__links-list-item">посмотреть лоты</li>
+          <li class="header__links-list-item">об аукционе</li>
         </ul>
       </nav>
       <a class="header__logo">
@@ -26,9 +26,13 @@
         />
       </a>
       <address class="address">
-        <span class="phone number">+9 999 555 5555</span>
-        <span class="email">info@sobaka.ge</span>
-        <span class="address">наб. Принсенграхт 263- 265, Амстердам</span>
+        <a class="phone-number" href="tel:+99995555555">+9 999 555 5555</a>
+        <br>
+        <a class="email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <br>
+        <span class="header__link">
+          наб. Принсенграхт 263- 265, Амстердам
+        </span>
       </address>
     </header>
     <main>
@@ -38,14 +42,20 @@
           src="images/cover.jpg"
           alt="Картина с цветами"
         />
-        <h1>
-          <span class="accent-span text-left">Оно</span>
-          <span class="accent-span text-center">тебе</span>
-          <span class="accent-span text-left">надо</span>
-        </h1>
-        <div class="description">
-          <span class="description-span">Аукцион вещей, в которые никто не верил</span>
-          <button class="button">Сделать ставку</button>
+        <div class="overlay">
+          <h1 class="cover__title">
+            <div>
+              <span class="aligned-text aligned-text_left">Оно</span>
+              <span class="aligned-text aligned-text_center">тебе</span>
+              <span class="aligned-text aligned-text_right">надо</span>
+            </div>
+          </h1>
+          <div class="cover__description">
+            <span class="cover__description-text">
+              Аукцион вещей, в которые никто не верил
+            </span>
+          </div>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
@@ -55,14 +65,14 @@
           <ul class="cards-list">
             <li a="#0">
               <article class="card-content">
-                <div class="card-img">
-                  <img 
+                <div>
+                  <img class="card-img"
                     src="images/card-lot-01.jpg"
                     alt="Парень расчесывает волосы смотрясь в зеркало"
                   />
+                  <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+                  <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                 </div>
-                <div class="card-title">Фильм режиссёра, который бросил киношколу</div>
-                <div class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
               </article>
             </li>
             <li a="#0">
@@ -72,9 +82,9 @@
                     src="images/card-lot-02.jpg"  
                     alt="Джеймс Джойс - Иностранка"
                   />
+                  <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                  <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                 </div>
-                <div class="card-title">Книга, где описан один скучный день из жизни рекламного агента</div>
-                <div class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
               </article>
             </li>
             <li a="#0">
@@ -84,14 +94,14 @@
                     src="images/card-lot-03.jpg"
                     alt="Абстракция"
                   />
+                  <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                  <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 </div>
-                <div class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</div>
-                <div class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
               </article>
             </li>
           </ul>
           <aside class="sidebar">
-            <span class="more">посмотреть больше</span>
+            <span>посмотреть больше</span>
           </aside>
       </section>
       <section class="about">
@@ -102,25 +112,23 @@
           />    
         </div>
         <div>
-          <h3>
-            <span class="accent-span">Об аукционе</span>
-          </h3>
-          <span class="card-text">
+          <h2 class="accent-span">Об аукционе</h2>
+          <span class="about__card-text">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </span>
-          <span class="card-text">
+          <span class="about__card-text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
           </span>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <address class="address">
-        <span class="phone number">+9 999 555 5555</span>
+        <span class="phone-number">+9 999 555 5555</span>
         <span class="email">info@sobaka.ge</span>
-        <span class="address">наб. Принсенграхт 263- 265, Амстердам</span>
+        <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
-      <nav class="header_menu footer__menu">
+      <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item menu-item_active">главная</li>
           <li class="menu-item">посмотреть лоты</li>
@@ -128,19 +136,19 @@
         </ul>
       </nav>
       <div class="footer__links">
-        <a class="footer__link" href="https://www.youtube.com/ono_tebe_nado/" target="_blank">
+        <a class="footer__links" href="https://www.youtube.com/ono_tebe_nado/" target="_blank">
           <img 
             src="images/yt.svg"
             alt="Логотип YouTube"
           />
         </a>
-        <a class="footer__link" href="https://www.vk.com/ono.tebe.nado" target="_blank">
+        <a class="footer__links" href="https://www.vk.com/ono.tebe.nado" target="_blank">
           <img 
             src="images/vk.svg"
             alt="Логотип VK"
           />
         </a>
-        <a class="footer__link" href="https://www.pinterest.com/ono.tebe.nado" target="_blank">
+        <a class="footer__links" href="https://www.pinterest.com/ono.tebe.nado" target="_blank">
           <img 
             src="images/pinterest.svg"
             alt="Логотип Pinterest"
