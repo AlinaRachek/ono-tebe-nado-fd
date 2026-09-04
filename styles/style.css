@@ -139,22 +139,89 @@
 
 
 .lots {
-  
+  margin-top: 185px;
 }
 
-.cards-list {
-  line-height: 120%;
+.lots__heading {
+  font-size: 40px;
+  margin-left: 63px;
+  text-transform: uppercase;
 }
+
+.lots__card-list {
+  line-height: 120%;
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  margin-left: 23px;
+  list-style: none;
+}
+
+
 .card-title {
   text-transform: uppercase;
   text-decoration: underline;
+  margin-top: 48px;
+  margin-left: 41px;
+  margin-right: 18px;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 700;
+  color: white;
 }
 
-.card-img {
+.card_text {
   
 }
 
-.sidebar {
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  align-items: stretch;
+}
+
+.article {
+  position: relative;
+  height: 100%;
+  min-height: 596px;
+  background-position: center;
+  background-size: cover;
+}
+
+.a {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  alt: "Парень расчесывает волосы смотрясь в зеркало";
+  background-size: cover;
+  background-position: center;
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  alt: "Джеймс Джойс - Иностранка";
+  background-size: cover;
+  background-position: center;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  alt: "Абстракция";
+  background-size: cover;
+  background-position: center;
+}
+
+.lots__look-more-link {
   text-decoration: underline;
 }
 
