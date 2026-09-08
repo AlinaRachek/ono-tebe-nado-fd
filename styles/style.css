@@ -88,10 +88,6 @@
   z-index: 1;
 }
 
-.cover__title {
-  
-}
-
 .cover__background-img {
   background-repeat: no-repeat;
   background-position: center;
@@ -336,23 +332,17 @@
 .footer__menu-link-active {
   text-decoration: none;
 }
-.footer__menu-link {
 
-}
 
-.footer__social-list {
-  
-}
 .footer__social-list-item {
   display: flex;
   width: 240px;
   min-height: 48px;
   justify-content: space-between;
   margin-left: 63px;
+  list-style: none;
 }
-.footer__social-link {
 
-}
 .footer__social-icon {
   width: 48px;
   min-height: 48px;
