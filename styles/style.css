@@ -3,7 +3,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 0px 50px;
-  height: 288px;
+  margin-top: 93px;
   font-size: 18px;
 }
 
@@ -13,21 +13,21 @@
 .header__links-list {
   text-transform: lowercase;
   display: flex;
-  gap: 16px;
+  gap: 33px;
   list-style: circle;
   position: relative;
-  left: 0px;
-  top: 0px;
 }
 
 .header__links-list-item {
   text-decoration: underline;
-  margin-right: 16px;
+  
 }
+
 .header__links-list-item_no-bullit {
-  text-decoration: none;
-  margin-right: 20px;
   list-style: none;
+}
+.header__links-list-item_no-bullit a {
+  text-decoration: none;
 }
 
 .logo_black {
@@ -44,22 +44,20 @@
 .address {
   line-height: 24.3px;
   max-width: 264.57px;
-  height: 98px;
   justify-self: end;
   font-size: 18px;
+  font-style: normal;
 }
-.header_address {
+.header__address {
   margin-right: 37px;
 }
-.footer_address {
-  margin-right: 40px;
+.footer__address {
+  margin-right: 63px;
+  margin-top: 1px;
 }
 
-.phone-number {
-  text-decoration: underline;
-}
 
-.email {
+.address__link {
   text-decoration: underline;
 }
 
@@ -72,26 +70,26 @@
 .cover {
   text-transform: uppercase;
   letter-spacing: 30%;
-  height: 757px;
+  min-height: 757px;
   color: white;
   position: relative;
-
+  margin-top: 95px;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
-  background-color: rgb(0 0 0 / 0.3);
+  background-color: rgb(0 0 0 / 0.6);
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+  inset: 0;
 }
 
-.cover__background-img {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 757px;
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 169px;
 }
 
 .aligned-text {
@@ -101,48 +99,51 @@
 }
 
 .aligned-text_left {
-  position: absolute;
-  top: 165px;
-  left: 50px;
+  align-self: flex-start;
+  margin-left: 50px;
 }
 .aligned-text_center {
-  position: absolute;
-  top: 300px;
-  left: 380.5px;
+  align-self: center;
+  margin-top: 17px;
+  margin-left: 29px;
 }
 .aligned-text_right {
-  position: absolute;
-  top: 435px;
-  left: 663px;
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 17px;
 }
 
 .cover__description {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 107px;
+  align-items: center;
+  min-height: 51px;
+  margin: 105px 50px;
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0;
   word-spacing: 84%;
   line-height: 28px;
-  position: absolute;
-  top: 671px;
-  left: 50px;
 }
 
 .bet-button {
   text-transform: uppercase;
+  color: white;
   font-weight: 400;
   font-size: 22px;
+  min-height: 49px;
+  min-width: 257px;
+  align-self: center;
+  border-color:white;
+  border-radius: 1px;
   background-color: transparent;
-  position: absolute;
-  top: 661px;
-  right: 49px;
-  width: 257px;
-  height: 49px;
 }
 
 
 
 .lots {
-  margin-top: 185px;
+  margin-top: 180px;
 }
 
 .lots__heading {
@@ -160,6 +161,11 @@
   margin-top: 26px;
   margin-left: 23px;
   list-style: none;
+}
+
+.lots__card-list-item {
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -183,19 +189,18 @@
   color: white;
   line-height: 24px;
 }
-.card_text_film {
+.card_type_film .card_text {
   margin-top: 276px;
 }
-.card_text_book {
+.card_type_book .card_text {
   margin-top: 33px;
 }
-.card_text_picture {
+.card_type_picture .card_text {
   margin-top: 129px;
 }
 
 .lots__card-list-item {
   width: 334px;
-  min-height: 596px;
   align-items: stretch;
 }
 
@@ -207,35 +212,21 @@
   background-size: cover;
 }
 
-.a {
-  height: 100%;
-  text-decoration: none;
-}
-
 .card-link {
   display: block;
   height: 100%;
   text-decoration: none;
-  position: relative;
 }
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  alt: "Парень расчесывает волосы смотрясь в зеркало";
-  background-size: cover;
-  background-position: center;
 }
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  alt: "Джеймс Джойс - Иностранка";
-  background-size: cover;
-  background-position: center;
 }
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  alt: "Абстракция";
-  background-size: cover;
-  background-position: center;
+  
 }
 
 .lots__look-more-link {
@@ -252,18 +243,16 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   width: 1052px;
-  min-height: 595px;
-  margin-top: 120px;
+  margin-top: 122px;
 }
 
-.about__column-first {
+.about__logo-column {
   display: flex;
   justify-content: center;
   margin-left: 47px;
 }
-.about__column-second {
-  padding-left: 49px;
-  padding-top: 133px;
+.about__logo-image {
+  width: 62%;
 }
 
 .about__logo {
@@ -275,26 +264,29 @@
   justify-content: center;
   align-items: center;
   margin-top: 31px;
-  ;
-}
-.about__logo-image {
-  width: 62%;
 }
 
 .about__title {
  font-weight: 700;
  font-size: 40px;
  width: 291px;
- height: 47px;
  text-transform: uppercase;
 }
 .about__text {
  width: 693px;
- height: 312px;
  font-weight: 400;
  font-size: 20px;
  line-height: 24px;
  padding-top: 100px;
+}
+
+/* ИИ подсказал сделать так, сама не смогла дойти до этого, каюсь😭 */
+.about__text p + p {
+  margin-top: 23px;
+}
+.about__content {
+  padding-left: 49px;
+  padding-top: 133px;
 }
 
 
@@ -302,7 +294,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1100px;
-  min-height: 180px;
   margin-top: 180px;
   justify-content: center;
   align-content: space-between;
@@ -311,10 +302,12 @@
 
 .footer__menu {
   display: flex;
+  margin-top: -32px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 163.9px;
-  height: 64px;
+  min-height: 64px;
+  min-width: 163.9px;
   margin-left: 95px;
   
 }
