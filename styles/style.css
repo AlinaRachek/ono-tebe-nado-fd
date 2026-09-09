@@ -61,11 +61,6 @@
   text-decoration: underline;
 }
 
-.header__address {
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
 
 .cover {
   text-transform: uppercase;
@@ -166,6 +161,8 @@
 .lots__card-list-item {
   background-size: cover;
   background-position: center;
+  width: 334px;
+  align-items: stretch;
 }
 
 
@@ -197,11 +194,6 @@
 }
 .card_type_picture .card_text {
   margin-top: 129px;
-}
-
-.lots__card-list-item {
-  width: 334px;
-  align-items: stretch;
 }
 
 .article {
