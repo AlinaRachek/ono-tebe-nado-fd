@@ -22,10 +22,6 @@
   list-style: none;
 }
 
-.header__links-list a {
-  text-decoration: underline;
-}
-
 .header__link-active {
   text-decoration: none;
 }
